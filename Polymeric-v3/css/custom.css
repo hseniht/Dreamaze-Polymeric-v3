@@ -1,0 +1,238 @@
+
+body {
+  padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.top-layer {
+  position: absolute;
+  z-index: 1;
+}
+
+.legend {
+  width: 15%;
+  border-radius: 6px;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.zoom-option {
+  background-color: rgba(255, 255, 255, 0.40);
+  border-radius: 4px;
+}
+
+.btn-zoom {
+  width: 35px;
+  font-size: 20px;
+  padding-top: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+
+/* BULBS */
+.bulb {
+    width: 18px;
+    height: 18px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    /* background-color: #dc3545; */
+    position: absolute;
+}
+
+/* Combine to .bulb for positioning*/
+.bulb.M-AT2 {
+  position: absolute;
+  top: 275px;
+  left: 550px;
+}
+
+.bulb.PP2 {
+  position: absolute;
+  top: 512px;
+  left: 530px;
+}
+
+.bulb.TP2 {
+  position: absolute;
+  top: 512px;
+  left: 799px;
+}
+.bulb.TI601 {
+  position: absolute;
+  top: 410px;
+left: 902px;
+}
+
+.bulb.M-JR2 {
+  position: absolute;
+  top: 284px;
+  left: 832px;
+}
+
+.bulb.TI409 {
+  position: absolute;
+  top:84px;
+  left: 820px;
+}
+
+.bulb.venting-fan {
+  position: absolute;
+  top: 228px;
+  left: 735px;
+}
+.bulb.solid-hopper {
+  position: absolute;
+  top: 278px;
+  left: 735px;
+}
+
+.bulb.TI701 {
+  position: absolute;
+  top: 422px;
+  left: 622px;
+}
+
+/*Page 1*/
+
+.bulb.M-AT3 {
+  position: absolute;
+  /* top: 275px; */
+  top:  253px;
+  left: 266px;
+}
+.bulb.M-M1 {
+  position: absolute;
+  top: 259px;
+  left: 430px;
+}
+
+.bulb.TI801 {
+  position: absolute;
+  top: 398px;
+  left: 341px;
+}
+
+.bulb.DP1 {
+  position: absolute;
+  top: 467px;
+  left: 418px;
+}
+.bulb.DP2 {
+  position: absolute;
+  top: 467px;
+  left: 443px;
+}
+
+.bulb.M-JR3 {
+  position: absolute;
+  top: 274px;
+  left: 668px;
+}
+
+.bulb.TI801-2 {
+  position: absolute;
+  top: 420px;
+  left: 740px;
+
+}
+
+.bulb.TI901 {
+  position: absolute;
+  top: 411px;
+  left: 1012px;
+}
+
+.bulb.PP3 {
+  position: absolute;
+  top: 495px;
+  left: 219px;
+}
+.bulb.PP4 {
+  position: absolute;
+  top: 502px;
+  left: 899px;
+}
+
+.bulb.M-JR4 {
+  position: absolute;
+  top: 268px;
+  left: 931px;
+}
+
+
+
+/* BOXES */
+.box {
+  width: 30px;
+  height: 19px;
+  border: 1px solid grey;
+  font-size: 10px;
+  text-align: center;
+}
+
+
+.TI701 {
+  position: absolute;
+  top: 399px;
+  left: 617px;
+}
+
+.TI601 {
+  position: absolute;
+  top: 388px;
+  left: 896px;
+}
+.TI409 {
+  position: absolute;
+  top: 62px;
+  left: 814px;
+}
+
+/*Page 1*/
+.TI801 {
+  position: absolute;
+  top: 376px;
+  left: 335px;
+}
+.TI801-2 {
+  position: absolute;
+  top: 398px;
+  left: 734px;
+}
+.TI901 {
+  position: absolute;
+  top: 388px;
+  left: 1006px;
+}
+
+
+
+
+/* texts */
+.text-blue {
+  /* font-weight: bold; */
+  color: #007bff;
+}
+
+#example {
+  padding: .25rem!important;
+}
+
+
+/*BACKGROUND COLORS*/
+.bg-red {
+  background-color: #dc3545;
+}
+
+.bg-green {
+  background-color: #28a745;
+}
+
+.bg-blue {
+  background-color: #007bff;
+}
+
+.bg-amber {
+  background-color: #ff9007;
+}
