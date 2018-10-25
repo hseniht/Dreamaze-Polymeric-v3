@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/datatables.min.css" />
     <link rel="stylesheet" href="css/custom.css" />
   </head>
-  <body style="background-color:black">
+  <body class="dragscroll"  style="background-color:black; overflow: scroll;">
     <header>
       <!--NAVBAR-->
       <nav class="navbar navbar-expand-lg navbar-light navbar-dark fixed-top bg-dark">
@@ -80,7 +80,7 @@
           </div>
 
 
-          <div id="zoomCanvas" class="container">
+          <div id="zoomCanvas" class="container" style="cursor: grab; cursor : -o-grab; cursor : -moz-grab; cursor : -webkit-grab;">
             <!-- Overlay -->
             <div class="top-layer">
               <!-- <h1>Hello World</h1> -->
@@ -101,11 +101,13 @@
 
             </div>
             <!-- Fixed Process background -->
-            <img src="images/Polymeric-Page2-v2-2-dark1.png" style="width:994px;"/>
+            <!-- <img src="images/Polymeric-Page2-v2-2-dark1.png" style="width:994px;"/> -->
+            <img src="images/Polymeric-draw-v3-PAGE-1-black.png" style="width:994px;"/>
           </div>
     </div>
 
   <!-- <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script> -->
+  <script type="text/javascript" src="js/dragscroll.js"></script>
   <script type="text/javascript" src="js/datatables.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
