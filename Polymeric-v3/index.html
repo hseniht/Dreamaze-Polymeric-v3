@@ -45,28 +45,35 @@
           <div class="row mt-2 px-3 py-3 pt-md-5">
 
             <!-- Legend table -->
+
             <div class="col-9" style="z-index:2">
-              <table class="legend table table-borderless table-dark ml-5">
-                <tr>
-                  <th colspan="2" class="text-center bg-dark" style="background-color: rgba(255, 255, 255, 0.4); border-radius: 6px 6px 0 0;">LEGEND</th>
-                </tr>
-                <tr>
-                  <td class="pl-4 py-3"><span class="bulb bg-blue"></span></td>
-                  <td>Healthy</td>
-                </tr>
-                <tr>
-                  <td class="pl-4 py-3"><span class="bulb bg-green"></span></td>
-                  <td>Stop</td>
-                </tr>
-                <tr>
-                  <td class="pl-4 py-3"><span class="bulb bg-red"></span></td>
-                  <td>Run</td>
-                </tr>
-                <tr>
-                  <td class="pl-4 py-3"><span class="bulb bg-amber"></span></td>
-                  <td>Fault</td>
-                </tr>
-              </table>
+              <label class="trigger ml-5" style="position:fixed;">
+                <input type="checkbox" class="checkbox checkbox--red" />Show Legend
+                <span class="">
+                  <table class="legend table table-borderless table-dark">
+                    <tr>
+                      <th colspan="2" class="text-center bg-dark" style="background-color: rgba(255, 255, 255, 0.4); border-radius: 6px 6px 0 0;">LEGEND</th>
+                    </tr>
+                    <tr>
+                      <td class="pl-4 py-3"><span class="bulb bg-blue"></span></td>
+                      <td>Healthy</td>
+                    </tr>
+                    <tr>
+                      <td class="pl-4 py-3"><span class="bulb bg-green"></span></td>
+                      <td>Stop</td>
+                    </tr>
+                    <tr>
+                      <td class="pl-4 py-3"><span class="bulb bg-red"></span></td>
+                      <td>Run</td>
+                    </tr>
+                    <tr>
+                      <td class="pl-4 py-3"><span class="bulb bg-amber"></span></td>
+                      <td>Fault</td>
+                    </tr>
+                  </table>
+                </span>
+              </label>
+
             </div>
 
             <!--Zoom options-->
@@ -95,9 +102,9 @@
               <div class="bulb TI701 bg-blue"></div>
               <div class="bulb TI409 bg-red"></div>
 
-              <div class="box TI701 bg-white" tooltip="TI701 !" tooltip-position="left">200.5</div>
-              <div id="tooltip1" class="box TI601 bg-white" data-toggle="tooltip" data-placement="top" title="szupp">200.5</div>
-              <div class="box TI409 bg-white" data-title="TI409">200.5</div>
+              <div class="box TI701" tooltip="TI701!" tooltip-position="top">200.5</div>
+              <div class="box TI601" tooltip="TI601!" tooltip-position="left">200.5</div>
+              <div class="box TI409" data-title="TI409">200.5</div>
 
             </div>
             <!-- Fixed Process background -->
@@ -109,7 +116,7 @@
   <!-- <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script> -->
   <script type="text/javascript" src="js/dragscroll.js"></script>
   <script type="text/javascript" src="js/datatables.min.js"></script>
-  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- <script type="text/javascript" src="js/popper.min.js"></script> -->
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
   </body>
