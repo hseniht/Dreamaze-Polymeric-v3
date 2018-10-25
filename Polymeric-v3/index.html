@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/datatables.min.css" />
     <link rel="stylesheet" href="css/custom.css" />
   </head>
-  <body class="dragscroll"  style="background-color:black; overflow: scroll;">
+  <body class="dragscroll"  style="background-color:gray; overflow: scroll;">
     <header>
       <!--NAVBAR-->
       <nav class="navbar navbar-expand-lg navbar-light navbar-dark fixed-top bg-dark">
@@ -72,7 +72,7 @@
             <!--Zoom options-->
             <div class="col-3 d-flex justify-content-center" style="z-index:2">
               <div class="position-fixed zoom-option p-2">
-                <button id="zoomIn" onclick="zoom(this.id)" type="button" class="btn-zoom btn btn-dark">+</button>
+                <button id="zoomIn" onclick="zoom(this.id)" type="button" class="btn-zoom btn btn-dark" data-toggle="tooltip" data-placement="top" title="zoomIn">+</button>
                 <button id="zoomOut" onclick="zoom(this.id)" type="button" class="btn-zoom btn btn-dark">-</button>
                 <div id="zoomValue" class="d-inline text-white"></div>
               </div>
@@ -95,9 +95,9 @@
               <div class="bulb TI701 bg-blue"></div>
               <div class="bulb TI409 bg-red"></div>
 
-              <div class="box TI701 bg-white">200.5</div>
-              <div class="box TI601 bg-white">200.5</div>
-              <div class="box TI409 bg-white">200.5</div>
+              <div class="box TI701 bg-white" tooltip="TI701 !" tooltip-position="left">200.5</div>
+              <div id="tooltip1" class="box TI601 bg-white" data-toggle="tooltip" data-placement="top" title="szupp">200.5</div>
+              <div class="box TI409 bg-white" data-title="TI409">200.5</div>
 
             </div>
             <!-- Fixed Process background -->
@@ -109,6 +109,7 @@
   <!-- <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script> -->
   <script type="text/javascript" src="js/dragscroll.js"></script>
   <script type="text/javascript" src="js/datatables.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
   </body>

@@ -92,3 +92,11 @@ function zoom (clickedId){
 
   }
 }
+
+// $(function () {
+//   $('[data-toggle="tooltip"]').tooltip()
+// });
+//
+// $('#tooltip1').tooltip({ boundary: 'scrollParent' });
+//
+// $('#tooltip1').tooltip('update');
