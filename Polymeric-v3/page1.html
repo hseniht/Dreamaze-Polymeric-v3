@@ -4,12 +4,12 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title></title>
+    <title>Polymeric v3 Process 2</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/datatables.min.css" />
     <link rel="stylesheet" href="css/custom.css" />
   </head>
-  <body style="background:#495057">
+  <body class="dragscroll" style="background:#495057; overflow: scroll;">
     <header>
       <!--NAVBAR-->
       <nav class="navbar navbar-expand-lg navbar-light navbar-dark fixed-top bg-dark">
@@ -46,27 +46,32 @@
 
           <!-- Legend table -->
           <div class="col-9" style="z-index:2">
-            <table class="legend table table-borderless table-dark ml-5">
-              <tr>
-                <th colspan="2" class="text-center bg-dark" style="background-color: rgba(255, 255, 255, 0.4); border-radius: 6px 6px 0 0;">LEGEND</th>
-              </tr>
-              <tr>
-                <td class="pl-4 py-3"><span class="bulb bg-blue"></span></td>
-                <td>Healthy</td>
-              </tr>
-              <tr>
-                <td class="pl-4 py-3"><span class="bulb bg-green"></span></td>
-                <td>Stop</td>
-              </tr>
-              <tr>
-                <td class="pl-4 py-3"><span class="bulb bg-red"></span></td>
-                <td>Run</td>
-              </tr>
-              <tr>
-                <td class="pl-4 py-3"><span class="bulb bg-amber"></span></td>
-                <td>Fault</td>
-              </tr>
-            </table>
+            <label class="trigger ml-5" style="position:fixed;">
+              <input type="checkbox" class="checkbox checkbox--red" />Show Legend
+              <span class="">
+                <table class="legend table table-borderless table-dark">
+                  <tr>
+                    <th colspan="2" class="text-center bg-dark" style="background-color: rgba(255, 255, 255, 0.4); border-radius: 6px 6px 0 0;">LEGEND</th>
+                  </tr>
+                  <tr>
+                    <td class="pl-4 py-3"><span class="bulb bg-blue"></span></td>
+                    <td>Healthy</td>
+                  </tr>
+                  <tr>
+                    <td class="pl-4 py-3"><span class="bulb bg-green"></span></td>
+                    <td>Stop</td>
+                  </tr>
+                  <tr>
+                    <td class="pl-4 py-3"><span class="bulb bg-red"></span></td>
+                    <td>Run</td>
+                  </tr>
+                  <tr>
+                    <td class="pl-4 py-3"><span class="bulb bg-amber"></span></td>
+                    <td>Fault</td>
+                  </tr>
+                </table>
+              </span>
+            </label>
           </div>
 
           <!--Zoom options-->
@@ -79,7 +84,7 @@
           </div>
         </div>
 
-          <div id="zoomCanvas" class="container">
+          <div id="zoomCanvas" class="container" style="cursor: grab; cursor : -o-grab; cursor : -moz-grab; cursor : -webkit-grab;">
             <!-- Overlay -->
             <div class="top-layer">
               <!-- <h1>Hello World</h1> -->
@@ -104,11 +109,13 @@
 
             </div>
             <!-- Fixed Process background -->
-            <img src="images/Polymeric-draw-v3-PAGE-2-black.png" style="width:1043px;"/>
+            <!-- <img src="images/Polymeric-draw-v3-PAGE-2-black.png" style="width:1043px;"/> -->
+            <img src="images/Polymeric-draw-v3-PAGE-2-black-final.png" style="width:1043px;"/>
           </div>
     </div>
 
   <!-- <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script> -->
+  <script type="text/javascript" src="js/dragscroll.js"></script>
   <script type="text/javascript" src="js/datatables.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>

@@ -43,141 +43,120 @@ body {
 
 /* Combine to .bulb for positioning*/
 .bulb.M-AT2 {
-  position: absolute;
+  /* position: absolute; */
   top: 275px;
   left: 550px;
 }
 
 .bulb.MAT-P2-6 {
-  position: absolute;
+  /* position: absolute; */
   top: 254px;
   left: 338px;
 }
 .bulb.MAT-P2-7 {
-  position: absolute;
+  /* position: absolute; */
   top: 284px;
   left: 338px;
 }
 .bulb.MAT-P2-8 {
-  position: absolute;
   top: 312px;
   left: 338px;
 }
 
 .bulb.PP2 {
-  position: absolute;
   top: 512px;
   left: 530px;
 }
 
 .bulb.TP2 {
-  position: absolute;
   top: 512px;
   left: 799px;
 }
 .bulb.TI601 {
-  position: absolute;
   top: 410px;
 left: 902px;
 }
 
 .bulb.M-JR2 {
-  position: absolute;
   top: 284px;
   left: 832px;
 }
 
 .bulb.TI409 {
-  position: absolute;
   top:84px;
   left: 820px;
 }
 
 .bulb.venting-fan {
-  position: absolute;
   top: 228px;
   left: 735px;
 }
 .bulb.solid-hopper {
-  position: absolute;
   top: 278px;
   left: 735px;
 }
 
-.bulb.TI701 {
-  position: absolute;
-  top: 422px;
-  left: 622px;
+.bulb.JR5 {
+  top: 396px;
+  left: 52px;
 }
 
 /*Page 1*/
 
 .bulb.M-AT3 {
-  position: absolute;
   /* top: 275px; */
   top:  253px;
   left: 266px;
 }
 .bulb.M-M1 {
-  position: absolute;
   top: 259px;
   left: 430px;
 }
 
 .bulb.TI801 {
-  position: absolute;
   top: 398px;
   left: 343px;
 }
 
 .bulb.DP1 {
-  position: absolute;
   top: 444px;
   left: 418px;
 }
 .bulb.DP2 {
-  position: absolute;
   top: 444px;
   left: 443px;
 }
 
 .bulb.TI416 {
-  position: absolute;
   top: 290px;
   left: 586px;
 }
 .bulb.M-JR3 {
-  position: absolute;
   top: 255px;
   left: 668px;
 }
 
 .bulb.TI801-2 {
-  position: absolute;
   top: 399px;
   left: 740px;
 
 }
 
 .bulb.TI901 {
-  position: absolute;
   top: 388px;
   left: 1012px;
 }
 
 .bulb.PP3 {
-  position: absolute;
   top: 495px;
   left: 219px;
 }
 .bulb.PP4 {
-  position: absolute;
   top: 481px;
   left: 898px;
 }
 
 .bulb.M-JR4 {
-  position: absolute;
   top: 245px;
   left: 931px;
 }
@@ -208,6 +187,11 @@ color: white;
   top: 213px;
   left: 385px;
 }
+.JR5 {
+  position: absolute;
+  top: 369px;
+  left: 45px;
+}
 
 .TI601 {
   position: absolute;
@@ -228,7 +212,7 @@ color: white;
 }
 .TI416 {
   position: absolute;
-  top: 267px;
+  top: 268px;
   left: 578px;
 }
 .TI801-2 {
@@ -389,11 +373,9 @@ e.g :
   background: #42e5ffb3;
 }
 
-
 /*end of TOOLTIPS*/
 
-/*HIDE LEGEND*/
-
+/*SHOW & HIDE LEGEND*/
 
 .trigger input[type="checkbox"] + span {
   visibility: hidden;
@@ -405,10 +387,10 @@ e.g :
   opacity: 1;
   transition-delay: 0s;
 }
-.msg {
+/* .msg {
   display: block;
   margin-top: 8px;
   padding: 8px 12px;
   border: 1px solid #ddd;
   border-radius: 3px;
-}
+} */

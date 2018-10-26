@@ -47,28 +47,7 @@ function validateStatus(){
 validateStatus();
 
 
-
-// zoom option
-
-// var init = 100;
-// var plus=0;
-//
-// function zoomIn() {
-//   init += 10;
-//   var zoom = document.getElementById('zoom');
-//
-//   zoom.style.zoom=`${init}%`;
-//   console.log("its zoomin in!");
-// }
-// function zoomOut() {
-//   init += -10;
-//   var zoom = document.getElementById('zoom');
-//   zoom.style.zoom=`${init}%`;
-//   console.log("its zoomin in!");
-// }
-
-
-//newer
+//Zoom Option
 var init = 100;
 
 function zoom (clickedId){
@@ -92,19 +71,3 @@ function zoom (clickedId){
 
   }
 }
-
-/*For Checkbox */
-
-/**
- * Startup animation.
- */
-var checkboxes = document.querySelectorAll('input[type="checkbox"]'),
-    setChecked = null;
-
-(setChecked = function(i) {
-  checkboxes[i].checked = true;
-
-  if (i < checkboxes.length - 1) {
-    setTimeout(setChecked, 180, i + 2);
-  }
-})(0);
