@@ -272,16 +272,15 @@ color: white;
   background-color: #ff9007;
 }
 
-/* tooltips */
+/* TOOLTIPS */
 
-/* .tooltip-inner {
-    background-color: #ffffff80;
-}
 
-.bs-tooltip-auto[x-placement^=top] .arrow::before, .bs-tooltip-top .arrow::before {
-    border-top-color: rgba(255, 255, 255, 0.50);
-} */
+/*Version 1 - single Position
+  - using only "data title=" tag on html. Eg :
 
+  <div class="box TI409" data-title="Your text here">160.5....bla bla bla</div>
+
+*/
 
 [data-title] {
   position: relative;
@@ -304,6 +303,7 @@ color: white;
   opacity: 1;
   transition-delay:1.0s;
 }
+
 [data-title]:hover::after {
   content: '';
   position: absolute;
@@ -320,7 +320,18 @@ color: white;
 }
 
 
-/*alternate v2*/
+/*Version 2 : multiple position
+
+- using "tooltip ="
+e.g :
+  <div class="box TI601" tooltip="Your text here">160.5.....bla bla bla</div>
+
+- By default it positions on top, but to change you can specify using "tooltip-position" tag
+- "tooltip-position" have 4 values : top, bottom, left & right
+e.g :
+  <div class="box TI601" tooltip="Your text here" tooltip-position="left">160.5.....bla bla bla</div>
+
+*/
 
 [tooltip] {
   /* margin: 20px 60px;
@@ -424,6 +435,8 @@ color: white;
   background: #42e5ffb3;
 }
 
+
+/*end of TOOLTIPS*/
 
 /*HIDE LEGEND*/
 
